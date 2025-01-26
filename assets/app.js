@@ -2,7 +2,7 @@ let cityName;
 const apikey = 'a0774e44b3162aadfc0f84fce0f6511c'
 document.getElementById("submit").addEventListener("click", function() {
     cityName=document.getElementById("userInput").value.toLowerCase();
-    const apiUrl=`https:/api.openweathermap.org/data/2.5/weather?q=${cityName}`
+    const apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${cityName}`
      fetch(apiUrl + `&appid=${apikey}`)
     .then((response) => {
         if (response.ok) {
