@@ -13,6 +13,20 @@ main{
     background-color: lightgoldenrodyellow;
     color: aliceblue;
 }
+svg{
+    width: 2rem;
+    aspect-ratio: 1;
+}
+.data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    svg{
+        width: 3rem;
+    }
+}
 #icon{
     width: 100px;
     height: 100px;
@@ -66,7 +80,7 @@ main{
 }
 #forecast button{
     width: 3.5rem;
-    aspect-ratio: 1/1;
+    height: 3.5rem;
     border: none;
     border-radius: 100%;
     background-color: #f1f1f1;
@@ -74,6 +88,9 @@ main{
     font-size: 1.5rem;
     cursor: pointer;
     outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #forecast .display{
     width: 80%;
@@ -114,7 +131,7 @@ main{
     gap: 5px;
 }
 
-/* Media Queries for responsiveness */
+
 @media (max-width: 1024px) {
     #forecast {
         width: 50%;
@@ -130,6 +147,7 @@ main{
     }
     #forecast button {
         width: 3rem;
+        height: 3rem;
         font-size: 1.2rem;
     }
     #humidity h3, #wind h3 {
@@ -155,6 +173,7 @@ main{
     }
     #forecast button {
         width: 2.5rem;
+        height: 2.5rem;
         font-size: 1rem;
     }
     #humidity h3, #wind h3 {
@@ -187,6 +206,7 @@ main{
     }
     #forecast button {
         width: 3rem;
+        height: 3rem;
         font-size: 1.2rem;
     }
     #humidity h3, #wind h3 {
