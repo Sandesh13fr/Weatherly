@@ -28,8 +28,8 @@ svg{
     }
 }
 #icon{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    aspect-ratio: 1;
 }
 #forecast{
     width: 30%;
@@ -61,6 +61,7 @@ svg{
     padding: 0 10px;
     font-size: 1.5rem;
     outline: none;
+    color: #dea439;
     background-color: #f1f1f1;
     text-align: center;
     font-weight: 500;
@@ -68,7 +69,7 @@ svg{
 #forecast input[type="text"]::placeholder{
     font-weight: 500;
 
-    color: #212121;
+    color: #dea439;
 }
 #forecast input[type="text"]:focus{
     background-color: #f8f8f8;
@@ -107,6 +108,7 @@ svg{
     align-items: center;
     width: 100%;
     text-align: center;
+    text-transform: capitalize;
 }
 #humidity h3{
     font-size: 1.5rem;
